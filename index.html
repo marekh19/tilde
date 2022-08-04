@@ -3,6 +3,12 @@
 <meta name="color-scheme" content="dark light" />
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap"
+  rel="stylesheet"
+/>
 <title>~</title>
 
 <script>
@@ -13,14 +19,18 @@
         searchTemplate: ':{}',
         url: 'http://localhost:3000',
       },
+      1: {
+        name: '10kreader',
+        searchTemplate: '/company/{}',
+        url: 'https://www.10kreader.com',
+      },
       a: {
-        name: 'AWS',
-        url: 'https://us-west-2.console.aws.amazon.com/console/home',
+        name: 'STRV Academy',
+        url: 'https://github.com/strvcom/frontend-academy-2022/wiki',
       },
       b: {
-        name: 'Dribbble',
-        searchTemplate: '/search/{}',
-        url: 'https://dribbble.com/shots/popular',
+        name: 'Binance',
+        url: 'https://www.binance.com/en',
       },
       c: {
         name: 'Calendar',
@@ -41,19 +51,14 @@
         searchTemplate: '/search?q={}',
         url: 'https://github.com',
       },
-      h: {
-        name: 'Hypem',
-        searchTemplate: '/search/{}',
-        url: 'https://hypem.com/latest',
-      },
       i: {
-        name: 'Inbox',
-        url: 'https://mail.proton.me/u/0/inbox',
+        name: 'IBKR',
+        url: 'https://www.interactivebrokers.co.uk/en/home.php',
       },
       k: {
-        name: 'Keep',
-        searchTemplate: '/u/0/#search/text={}',
-        url: 'https://keep.google.com/u/0',
+        name: 'Gurufocus',
+        searchTemplate: '/stock/{}/summary',
+        url: 'https://www.gurufocus.com/',
       },
       l: {
         name: 'LinkedIn',
@@ -68,11 +73,6 @@
       n: {
         name: 'Notion',
         url: 'https://www.notion.so',
-      },
-      p: {
-        name: 'Hunt',
-        searchTemplate: '/search?q={}',
-        url: 'https://www.producthunt.com',
       },
       r: {
         name: 'Reddit',
@@ -89,14 +89,18 @@
         searchTemplate: '/search?q={}',
         url: 'https://twitter.com/home',
       },
+      u: {
+        name: 'Udemy',
+        searchTemplate: '/courses/search/?src=ukw&q={}',
+        url: 'https://www.udemy.com/home/my-courses/learning/',
+      },
       v: {
         name: 'Vercel',
         url: 'https://vercel.com',
       },
       x: {
-        name: 'Netflix',
-        searchTemplate: '/search?q={}',
-        url: 'https://www.netflix.com/browse',
+        name: 'Valuat.io',
+        url: 'https://new.valuat.io',
       },
       y: {
         name: 'YouTube',
@@ -113,7 +117,7 @@
     searchDelimiter: "'",
     suggestionLimit: 4,
     suggestions: {
-      0: ["0'8000", "0'8080"],
+      0: ["0'8000", "0'8080", "0'5500"],
       a: ['a/cognito/v2/idp/user-pools', 'a/dynamodbv2#item-explorer'],
       c: ['c/calendar/u/1/r', 'c/calendar/u/2/r'],
       d: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
@@ -131,16 +135,15 @@
 
 <style>
   :root {
-    --color-background: #111;
-    --color-text-subtle: #999;
-    --color-text: #eee;
-    --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
-      Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+    --color-background: #1e1e2e;
+    --color-text-subtle: #a6adc8;
+    --color-text: #cdd6f4;
+    --font-family: 'JetBrains Mono', monospace;
     --font-size-1: 1rem;
     --font-size-2: 3rem;
     --font-size-base: 110%;
     --font-weight-bold: 700;
-    --font-weight-normal: 400;
+    --font-weight-normal: 500;
     --line-height-base: 1.4;
     --space-1: 1rem;
     --space-2: 2rem;
@@ -150,9 +153,9 @@
 
   @media (prefers-color-scheme: light) {
     :root {
-      --color-background: #eee;
-      --color-text-subtle: #777;
-      --color-text: #111;
+      --color-background: #eff1f5;
+      --color-text-subtle: #6c6f85;
+      --color-text: #4c4f69;
     }
   }
 
